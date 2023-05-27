@@ -27,7 +27,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCcuOfNBEfdyk8FOI71fewi-KTPjXebzsw" />
+            android:value="" /> <!--Ganti menjadi google maps key api yang didapat dari cloud console.-->
 
         <activity
             android:name=".views.maps.MapsActivity"

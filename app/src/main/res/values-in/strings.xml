@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dicogram</string>
+    <string name="invalid_email">Email tidak valid!</string>
+    <string name="invalid_password">Password tidak valid!</string>
+    <string name="invalid_username">Username tidak valid!</string>
+    <string name="message_error">Galat!</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="refresh">Muat ulang</string>
+    <string name="maps">Maps</string>
+    <string name="description">Deskripsi</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="content_default_avatar">Avatar default</string>
+    <string name="content_image_story">Gambar cerita</string>
+    <string name="content_person_name">Nama</string>
+    <string name="content_detail_image">Detail gambar</string>
+    <string name="content_description_detail">Detail deskripsi</string>
+    <string name="content_add_story">Tambah cerita</string>
+    <string name="content_image_preview">Tampilan gambar</string>
+    <string name="register_welcome_back">Selamat datang!</string>
+    <string name="register_register_to_continue">Daftar untuk melanjutkan</string>
+    <string name="register_register">Daftar</string>
+    <string name="register_login">Masuk</string>
+    <string name="register_prompt">Sudah punya akun ?</string>
+    <string name="login_login">Masuk</string>
+    <string name="login_login_to_continue">Masuk untuk melanjutkan</string>
+    <string name="login_dont_have_an_account">Belum punya akun?</string>
+    <string name="logout">Keluar</string>
+    <string name="add_current_location">Tambah lokasi sekarang</string>
+    <string name="upload">Unggah</string>
+    <string name="choose_image">Pilih gambar</string>
+    <string name="write_caption">Tulis caption</string>
+    <string name="content_shutter">Shutter</string>
+    <string name="content_switch_camera">Ubah kamera</string>
+</resources>

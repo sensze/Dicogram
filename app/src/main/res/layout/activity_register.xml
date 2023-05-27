@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".views.authentication.register.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label_greet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_welcome_back"
+            android:textColor="@color/dicoding_blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/label_greet_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_greet"
+            android:text="@string/register_register_to_continue"
+            android:textColor="@color/dicoding_light_grey"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/label_greet_secondary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:transitionName="lottie"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/social_media" />
+
+        <TextView
+            android:id="@+id/label_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:text="@string/register_register"
+            android:textColor="@color/dicoding_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="auth" />
+
+        <com.ifkusyoba.dicogram.views.customview.CustomUsernameEditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_auth"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.ifkusyoba.dicogram.views.customview.CustomEmailEditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_username"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.ifkusyoba.dicogram.views.customview.CustomPasswordEditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_email"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <com.ifkusyoba.dicogram.views.customview.CustomButtonRegister
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_password"
+            android:layout_marginTop="16dp"
+            android:elevation="10dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:transitionName="action" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_register"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:transitionName="misc">
+
+            <TextView
+                android:id="@+id/label_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_prompt"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/register_login"
+                android:textColor="@color/dicoding_blue"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/custom_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

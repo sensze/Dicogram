@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:paddingVertical="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/default_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/content_default_avatar"
+        android:transitionName="user_avatar"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@+id/img_story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/img_story"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/content_image_story"
+        android:scaleType="centerCrop"
+        android:transitionName="story_image"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/default_avatar"/>
+    <TextView
+        android:id="@+id/tv_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/content_person_name"
+        android:textColor="@color/dicoding_blue_dark"
+        android:textSize="18sp"
+        android:transitionName="user_name"
+        app:layout_constraintBottom_toBottomOf="@+id/default_avatar"
+        app:layout_constraintStart_toEndOf="@+id/default_avatar"
+        app:layout_constraintTop_toTopOf="@+id/default_avatar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
